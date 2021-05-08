@@ -16,7 +16,7 @@ class SlotAttention(nn.Module):
         self.to_k = nn.Linear(dim, dim)
         self.to_v = nn.Linear(dim, dim)
         #######################################################
-        instead of using GRU here we use BistableRecurrentCell
+        #instead of using GRU here we use BistableRecurrentCell
         #######################################################
         self.nbrnn = NeuromodulatedBistableRecurrentCell(dim, dim)
         ########################################################
